@@ -6,30 +6,55 @@ body {
 #head {
   width: 100%;
   height: 80px;
-  background-color: #424246;
+  background-color: #white;
 }
 
 #menuimg {
-
 }
 
 .menu {
-  color: white;
+  color: black;
   float: left;
   margin-left: 0px;
   background-color: transparent;
   border: none;
   width: 120px;
-  height: 80px;
+  height: 40px;
   font-size: 18px;
   cursor: pointer;
-  text-align: center;
+  margin-top: 17px;
 }
 
 .menu:hover {
-  background-color: #1f66e5;
+  color: #1f66e5;
 }
 
 .menu:first-of-type {
-margin-left: 40%;
+margin-left: 92px;
+}
+
+#TL {
+  height: 80px;
+  width: 20%;
+  box-shadow:0px 0px 0px 4px black inset;
+  float: left;
+}
+
+.imageLinks {
+  width: 30px;
+  height: auto;
+}
+
+#MM {
+  height: 80px;
+  width: 60%;
+  box-shadow:0px 0px 0px 4px black inset;
+  float: left;
+}
+
+#TR {
+  height: 80px;
+  width: 20%;
+  box-shadow:0px 0px 0px 4px black inset;
+  float: left;
 }

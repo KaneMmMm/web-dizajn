@@ -11,25 +11,39 @@
     <header id="head">
 
       <div id="TL">
-        <input class="imageLinks" type="image" src="sources/facebook_f.png" alt="facebooklink" name="facebookLogo">
-        <input class="imageLinks" type="image" src="sources/twitter.png" alt="twitterlink" name="twitterLogo">
-        <input class="imageLinks" type="image" src="sources/instagram.png" alt="instagramlink" name="instagramLogo">
+        <input onclick="location.href='http://www.facebook.com'" class="imageLinks" type="image" src="sources/facebook_f.png" alt="facebooklink" name="facebookLogo">
+        <input onclick="location.href='http://www.twitter.com'" class="imageLinks" type="image" src="sources/twitter.png" alt="twitterlink" name="twitterLogo">
+        <input onclick="location.href='http://www.instagram.com'" class="imageLinks" type="image" src="sources/instagram.png" alt="instagramlink" name="instagramLogo">
       </div>
       <div id="MM">
-        <img id="menuimg" src="" alt="logo">
-        <button class="menu">Home</button>
-        <button class="menu">Portfolio</button>
-        <button class="menu">Cenník</button>
-        <button class="menu">Referencie</button>
-        <button class="menu">Kontakt</button>
+        <div id="MMTOP">
+          <img id="menuimg" src="sources/boto_logo.png" alt="logo">
+        </div>
+        <div id="MMBOT">
+          <a href="index.html">            <button class="menu first">Home</button></a>
+          <a href="under/portfolio.html">  <button class="menu">Portfolio</button></a>
+          <a href="under/cennik.html">     <button class="menu">Cenník</button></a>
+          <a href="under/referencie.html"> <button class="menu">Referencie</button></a>
+          <a href="under/kontakt.html">    <button class="menu">Kontakt</button></a>
+        </div>
       </div>
       <div id="TR">
-        <img
+        <input type="image" class="TRimages" src="sources/search.png" alt="vyhladávanie">
+        <input type="image" class="TRimages" src="sources/cart.png" alt="košík">
       </div>
     </header>
 
-    <div class="">
-
+    <div class="mainBody">
+      <div class="mainTOP">
+        <img class="sideImages" src="sources/images/sideimage1.jpg" alt="vsak">
+        <img class="sideImages" src="sources/images/sideimage2.jpg" alt="obrazok">
+        <img id="middleImage" src="sources/images/middleimage.jpg" alt="ne">
+        <img class="sideImages" src="sources/images/sideimage3.jpg" alt="cosi">
+        <img class="sideImages" src="sources/images/sideimage4.jpg" alt="jak">
+      </div>
+      <div class="mainBOT">
+        <button type="button" class="more">Pozri Dalšie</button>
+    </div>
     </div>
 
 

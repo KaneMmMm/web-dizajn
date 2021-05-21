@@ -384,7 +384,7 @@ margin: auto;
   height: 300px;
   text-align: center;
   background-size: cover;
-  background-image: linear-gradient(rgba(4, 9, 30, 0.7),rgba(4, 9, 30, 0.7)),url(sources/portfolio/backgroun.png);
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7),rgba(4, 9, 30, 0.7)),url(sources/kontakt/calling.jpg);
   background-repeat: no-repeat;
 }
 
@@ -396,7 +396,77 @@ margin: auto;
   top: 95px;
 }
 
+.kontaktMap {
+  height: 500px;
+  width: 100%;
+}
+
 .mapouter {
   margin: auto;
   margin-top: 20px;
+}
+
+.leftKontakt {
+  width: 50%;
+  height: 450px;
+  float: left;
+}
+
+.adresa {
+  width: 100%;
+  height: 150px;
+}
+
+.telcislo {
+  width: 100%;
+  height: 150px;
+}
+
+.email {
+  width: 100%;
+  height: 150px;
+}
+
+#domcek {
+  width: 40px;
+  height: auto;
+  float: left;
+  margin-left: 150px;
+  margin-top: 50px;
+  margin-right: 15px;
+}
+
+#telefon {
+  width: 40px;
+  height: auto;
+  float: left;
+  margin-left: 150px;
+  margin-top: 55px;
+  margin-right: 15px;
+}
+
+#mail {
+  width: 40px;
+  height: auto;
+  float: left;
+  margin-left: 150px;
+  margin-top: 60px;
+  margin-right: 15px;
+}
+
+.ulica {
+  font-weight: 800;
+  padding-top: 50px;
+}
+
+.ulicaV2 {
+  font-weight: 200;
+}
+
+
+.rightKontakt {
+  width: 50%;
+  height: 500px;
+  box-shadow: 0 0 0 4px green inset;
+  float: left;
 }

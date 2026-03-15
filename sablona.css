@@ -6,6 +6,10 @@
   font-family: 'Poppins', sans-serif;
 }
 
+html {
+  overflow-y: scroll;
+}
+
 
 #head {
   width: 100%;
@@ -17,7 +21,6 @@
   width: 80px;
   height: auto;
   margin-top: 15px;
-  margin-left: 360px;
 }
 
 .menu {
@@ -67,7 +70,7 @@
 }
 
 .first {
-  margin-left: 92px;
+  margin-left: 0;
 }
 
 #TL {
@@ -105,11 +108,15 @@ margin-left: 90px;
 #MMTOP {
   height: 80px;
   width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 #MMBOT {
   height: 60px;
   width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 #TR {
@@ -146,6 +153,9 @@ margin-left: 90px;
 .mainTOP {
   width: 100%;
   height: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .mainBOT {
@@ -156,7 +166,6 @@ margin-left: 90px;
 .sideImages {
   width: 225px;
   height: auto;
-  float: left;
   margin-left: 10px;
   transition-duration: 0.3s;
   transition-timing-function: ease;
@@ -169,7 +178,7 @@ margin-left: 90px;
 }
 
 .sideImages:first-child {
-  margin-left: 85px;
+  margin-left: 0;
   margin-top: 110px;
 }
 
@@ -180,7 +189,6 @@ margin-left: 90px;
 #middleImage {
   width: 250px;
   height: auto;
-  float: left;
   margin-left: 10px;
   margin-top: 60px;
 }
@@ -192,7 +200,8 @@ margin-left: 90px;
   border: none;
   transition-duration: 0.2s;
   transition-timing-function: ease-out;
-  margin-left: 620px;
+  display: block;
+  margin: 20px auto;
   font-size: 14px;
 }
 
@@ -280,7 +289,7 @@ height: 1000px;
 .cennikMainBody {
   margin-top: 80px;
   width: 100%;
-  height: 1000px;
+  height: auto;
 }
 
 .cennikTop {
@@ -302,7 +311,12 @@ height: 1000px;
 
 .CennikOffers {
   width: 100%;
-  height: 200px;
+  height: auto;
+  padding-bottom: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
 }
 
 #OfferMain {
@@ -311,6 +325,7 @@ font-size: 32px;
 color: black;
 text-align: center;
 padding-top: 80px;
+width: 100%;
 }
 
 #offerSub {
@@ -318,9 +333,10 @@ margin: auto;
 font-weight: 400;
 font-size: 16px;
 color: darkgray;
-width: 30%;
-height: 100px;
+width: 100%;
+height: auto;
 text-align: center;
+padding-bottom: 40px;
 }
 
 .OffersBot {
@@ -329,46 +345,86 @@ text-align: center;
 }
 
 .offers {
-  float: left;
-  width: 30%;
-  height: 400px;
-  margin-top: 50px;
-  margin-left: 2.5%;
+  width: 27%;
+  height: auto;
+  margin-top: 30px;
   transition-duration: 0.4s;
-  background-color: #b00b69;
+  background-color: #ffffff;
+  border: 1px solid #e8e8e8;
+  border-top: 4px solid #b00b69;
   transition-delay: 0.1s;
-  border-radius: 20px;
+  border-radius: 8px;
+  padding: 28px;
+  box-sizing: border-box;
 }
 
 .offers:hover {
-  box-shadow: 0px 0px 18px black;
+  box-shadow: 0px 4px 20px rgba(176, 11, 105, 0.15);
+  transform: translateY(-4px);
 }
 
 .offerWhat {
-font-weight: 800;
-font-size: 24px;
-text-align: center;
-color: white;
-padding-top: 10px;
-margin: auto;
-width: 80%;
+font-weight: 600;
+font-size: 20px;
+text-align: left;
+color: #b00b69;
+padding-bottom: 12px;
+border-bottom: 1px solid #f0f0f0;
+margin-bottom: 12px;
 }
 
 .offerSubWhat {
-font-weight: 200;
-font-size: 16px;
-color: black;
-text-align: center;
-width: 80%;
-height: 300px;
-margin: auto;
+font-weight: 300;
+font-size: 15px;
+color: #555;
+text-align: left;
+line-height: 1.7;
 }
 
 
 
 /*                          REFERENCIE                          */
 .refMainBody {
+  margin-top: 80px;
+  width: 100%;
+  min-height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.refComingSoon {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.refBadge {
+  display: inline-block;
+  background-color: #fce8f3;
+  color: #b00b69;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 6px 16px;
+  border-radius: 20px;
+  margin-bottom: 24px;
+}
+
+.refTitle {
+  font-size: 42px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 20px;
+}
+
+.refSub {
+  font-size: 16px;
+  font-weight: 300;
+  color: #888;
+  max-width: 480px;
+  margin: 0 auto;
+  line-height: 1.8;
 }
 
 
@@ -467,6 +523,5 @@ margin: auto;
 .rightKontakt {
   width: 50%;
   height: 500px;
-  box-shadow: 0 0 0 4px green inset;
   float: left;
 }
